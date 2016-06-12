@@ -18,3 +18,9 @@ Route::get('about', 'pageController@about');
 Route::get('user', 'userController@index');
 
 Route::get('user/{id}', 'userController@profile');
+
+Route::get('room', 'roomController@index');
+
+Route::get('room/{slug}', 'roomController@room');
+
+Route::post('updatechat', 'chatController@update');

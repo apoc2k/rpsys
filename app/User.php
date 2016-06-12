@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Foundation\Auth\User as Eloquent;
 
-class User extends Authenticatable
+class User extends Eloquent
 {
     /**
      * The attributes that are mass assignable.

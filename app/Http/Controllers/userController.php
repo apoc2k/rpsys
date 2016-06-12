@@ -6,34 +6,22 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use App\User;
+
 class userController extends Controller
 {
   public function index()
   {
-    return view('user.index');
+    return view('user.home');
   }
 
-  public function profile($id)
+  public function profile($slug)
   {
-    $data = $this->getUserdata($id);
-    return view('user.profile', array('data' => $data));
+    $data = $this->getUserdata($slug);
+    return view('user.profile', compact('data'));
   }
 
-  private function getUserdata($id){
-    switch ($id) {
-      case 1:
-        $return = 'Paul';
-        break;
-      case 2:
-        $return = 'Erwin';
-        break;
-      case 3:
-        $return = 'Ruud';
-        break;
-      default:
-        $return = 'Nothing';
-      break;
-    }
-    return $return;
+  private function getUserdata($slug){
+    return User::whereSlug($slug)->first();
   }
 }
