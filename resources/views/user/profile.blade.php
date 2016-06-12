@@ -1,8 +1,11 @@
 @extends('2-col-left')
 
+@section('title')
+  <h3>Profile page</h3>
+@stop
+
 @section('content')
 
-  <h3>Profile page</h3>
   <div class="notification">
     <span>Welcome aboard {{ $data->firstname }}.</span>
     <span>This is your first time login in. In order to be able to access the full functionality of rpsys we'll need to verify your email first. We've just send you a mail containing a link. By clicking the link you'll be automatically validated and send back to this page.</span>

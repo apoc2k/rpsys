@@ -200,6 +200,11 @@ body {
 
 /* CONTENT BLOCK */
 
+#title {
+  margin-top:10px;
+  line-height:40px;
+}
+
 .notification {
   background:#eee;
   padding:8px;

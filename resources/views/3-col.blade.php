@@ -32,6 +32,9 @@
     </div>
 </div>
 <div class="row">
+    @yield('title')
+</div>
+<div class="row">
     <div class="small-12 large-3 columns" id="sidebar">
         <div class="sidebar-block">
             <ul class="sidebar-list">

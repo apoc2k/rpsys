@@ -31,6 +31,9 @@
         </div>
     </div>
 </div>
+<div class="row" id="title">
+    @yield('title')
+</div>
 <div class="row">
     <div class="small-12 large-9 columns" id="content">
 
