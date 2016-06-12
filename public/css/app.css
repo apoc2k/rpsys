@@ -18,10 +18,8 @@ h3 {
 /* NAVIGATION BLOCK */
 
 #nav_bar {
-    background: #35383d;
+    background: #3b3e43;
     height:80px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 18px;
 }
 
 #nav_bar ul {
@@ -30,8 +28,10 @@ h3 {
 
 #nav_bar #upper_menu {
   text-align:right;
-  background:#000;
+  background:#2d2f33;
   height:30px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 #nav_bar #upper_menu ul a {
   color:#fff;
@@ -56,7 +56,7 @@ h3 {
 
 #nav_bar #main_menu ul a {
   color:#fff;
-  font-family:Courier, Tahoma, sans-serif;
+  font-family:"Roboto Black";
   font-weight:bold;
   text-transform: uppercase;
   font-size:13px;
@@ -70,17 +70,19 @@ h3 {
   display:inline-block;
   padding:10px 20px;
   margin:10px 20px 0 0;
-  background:#272727;
 }
 
 
 /* SIDEBAR BLOCK */
 
+#sidebar {
+  padding: 0;
+}
+
 .sidebar-block {
   width: 100%;
   background:#eee;
   border-radius:8px;
-  margin: 0 0 0 -15px;
 }
 
 .sidebar-block ul {
